@@ -1,0 +1,7 @@
+.selectInput {
+  width: 292px;
+
+  @media (max-width: 530px) {
+    width: 80vw;
+  }
+}

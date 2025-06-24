@@ -1,0 +1,85 @@
+.contactForm {
+  display: flex;
+  flex-direction: column;
+
+  .secondary {
+    font-size: 2.6em;
+  }
+
+  .formInputs {
+    padding-right: 6%;
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
+    align-items: flex-end;
+
+    .marketingConsentInput {
+      input {
+        width: 15px;
+        height: 15px;
+        margin-right: 0;
+      }
+
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-start;
+      font-size: small;
+    }
+
+    .buttons {
+      margin-top: 15px;
+      display: flex;
+      gap: 25px;
+
+      .callMe {
+        color: black;
+        background-color: #00d6d1;
+      }
+
+      .monthlySubscribe {
+        border-width: 1px;
+        border-color: white;
+      }
+    }
+  }
+}
+
+@media (max-width: 530px) {
+  .contactForm {
+    .headline {
+      .mainHeadline {
+        font-size: 32px;
+        font-weight: 400;
+        margin: 0;
+      }
+
+      .secondary {
+        font-size: 24px;
+        font-weight: 400;
+        margin: 0;
+      }
+    }
+
+    .formInputs {
+      .annotation {
+        font-size: 14px;
+        font-weight: 400;
+      }
+
+      .buttons {
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 20px;
+        width: 81vw;
+      }
+
+      .marketingConsentInput {
+        .marketingConsentText {
+          font-size: 14px;
+          font-weight: 400;
+          text-align: right;
+        }
+      }
+    }
+  }
+}
